@@ -5,10 +5,12 @@ class Botao extends React.Component {
         onclick = () => {
             console.log('asdasd')
         }
-    render() {
 
+    render() {
+        const estaAtivo = true
+        const styles = {backgroundColor: estaAtivo ? "green" : "red" }
         return(
-            <button onClick={this.onclick}>Botão</button>
+            <button onClick={this.onclick} style={styles}>Botão</button>
         )
     }
 }
