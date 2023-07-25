@@ -1,5 +1,5 @@
-import './botao.css'
 import React from "react";
+import './botao.css'
 
 class Botao extends React.Component {
         onclick = () => {
@@ -7,10 +7,10 @@ class Botao extends React.Component {
         }
 
     render() {
-        const estaAtivo = true
-        const styles = {backgroundColor: estaAtivo ? "green" : "red" }
+
         return(
-            <button onClick={this.onclick} style={styles}>Botão</button>
+
+            <button className="botao">Botão</button>
         )
     }
 }
