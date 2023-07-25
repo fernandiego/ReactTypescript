@@ -1,16 +1,12 @@
-import React from "react";
-import './botao.css'
+import React from 'react';
+import style from './Botao.module.scss';
 
 class Botao extends React.Component {
-        onclick = () => {
-            console.log('asdasd')
-        }
-
     render() {
-
-        return(
-
-            <button className="botao">Botão</button>
+        return (
+            <button className={style.botao}>
+                Botão
+            </button>
         )
     }
 }

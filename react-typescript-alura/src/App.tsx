@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react"
+import style from "./style.module.scss"
 import Formulario from "./components/Formulario";
 import Lista from "./components/Lista";
-import './style.scss'
 
 function App() {
-    return (
-        <div className="AppStyle">
-            <Formulario></Formulario>
-            <Lista></Lista>
-        </div>
-    );
+  return (
+    <div className={style.AppStyle}>
+      <Formulario />
+      <Lista />
+    </div>
+  );
 }
 
 export default App;
