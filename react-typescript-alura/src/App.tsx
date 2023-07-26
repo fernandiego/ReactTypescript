@@ -7,13 +7,22 @@ import Cronometro from "./components/Cronometro";
 function App() {
     const [tarefas, setTarefas] = useState([{
         tarefa: 'React',
-        tempo: '02:00:00'
+        tempo: '02:00:00',
+        selecionado: false,
+        completado: false,
+        id: ""
     }, {
         tarefa: 'JavaScript',
-        tempo: '01:00:00'
+        tempo: '01:00:00',
+        selecionado: false,
+        completado: false,
+        id: ""
     }, {
         tarefa: 'TypeScript',
-        tempo: '03:00:00'
+        tempo: '03:00:00',
+        selecionado: false,
+        completado: false,
+        id: ""
     }])
     return (
         <div className={style.AppStyle}>
